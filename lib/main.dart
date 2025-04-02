@@ -1,12 +1,12 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/foundation.dart'; // For kIsWeb
-
+import 'package:flutter/foundation.dart'; 
+//Mariam Omer
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize Firebase
+
   if (Firebase.apps.isEmpty) {
     await Firebase.initializeApp(
       options: kIsWeb
@@ -18,7 +18,7 @@ void main() async {
               messagingSenderId: "10360596061",
               appId: "1:10360596061:web:d5387b9a47e910cc280fb4",
             )
-          : null, // Mobile initializes using google-services.json
+          : null, 
     );
   }
 
